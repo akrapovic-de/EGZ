@@ -84,3 +84,15 @@ elif door == "close":
     door_close(door)
 else:
     print("Error")
+
+while True:
+    for i in range(0, 200):
+        print("An: ", i)
+    sleep(1)
+    for i in range(0, 200):
+        print("Aus: ", i)
+    sleep(1)
+    status_door = input("ROS::status door (1-Abbruch)?")
+    if status_door == "1":
+        break
+print("Fertig")
